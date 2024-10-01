@@ -6,12 +6,27 @@ const HomeComponent = () => {
   return (
     <>
       <div className="homeDiv">
-        <div className="homeDivChild">
-          <NavLink to="/props-state">React Props and State Concepts</NavLink>
-        </div>
-        <div className="homeDivChild">
-          <NavLink to="/react-hooks">React Hooks Concept</NavLink>
-        </div>
+        <NavLink
+          to="/props-state"
+          className="homeDivChild"
+          style={{ textDecoration: `none`, color: `#000000` }}
+        >
+          React Props and State Concepts
+        </NavLink>
+        <NavLink
+          to="/react-hooks"
+          className="homeDivChild"
+          style={{ textDecoration: `none`, color: `#000000` }}
+        >
+          React Hooks Concept
+        </NavLink>
+        <NavLink
+          to="/react-conditional-rendering"
+          className="homeDivChild"
+          style={{ textDecoration: `none`, color: `#000000` }}
+        >
+          React Conditional Rendering Concepts
+        </NavLink>
       </div>
     </>
   );

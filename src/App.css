@@ -1,14 +1,17 @@
 .App-header {
   background-color: #282c34;
   min-height: 60px;
-  color: #ffffff;
+  text-align: center;
 }
 
-.App-header p {
+.App-header a {
   font-size: 21px;
-  margin: 0;
-  padding-top: 15px;
-  text-align: center;
+  margin-top: 15px;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  top: 15px;
 }
 
 .App-link {

@@ -1,0 +1,71 @@
+/* Accordion.css */
+.accordion {
+  width: 100%;
+  /* max-width: 600px; */
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-title {
+  background-color: #f9f9f9;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-title:hover {
+  background-color: #f1f1f1;
+}
+
+.accordion-title.active {
+  background-color: #ddd;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 15px;
+}
+
+.accordion-content.show {
+  max-height: 200px;
+  padding: 15px;
+  overflow-y: scroll;
+  /* transition: max-height 0.3s ease; */
+}
+
+.accordion-content p {
+  margin: 0;
+}
+
+/* Below is usecontext theme color style */
+
+button {
+  padding: 10px 20px; /* Add some padding to the button */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+  font-size: 16px; /* Increase font size */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for button */
+  border: 1px solid;
+  margin-top: 20px;
+}
+
+.light-theme {
+  background-color: #ffffff; /* Light button background */
+  color: #000; /* Dark button text */
+}
+
+.dark-theme {
+  background-color: #000000; /* Dark button background */
+  color: #fff; /* Light button text */
+}
